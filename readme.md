@@ -6,7 +6,7 @@
 
 (Comandos em parênteses são comandos e funções do Laravel)
 
-## Conhecimentos básicos
+### Conhecimentos básicos
 
 Laravel pode ser instalado com o Composer
 
@@ -19,7 +19,7 @@ Migrations manipula o database. Facilita para criar tabelas e apagar-las.
 
 Sedders sementes onde se cria registros nas tabelas sem ser de forma visual.
 
-## Artisan
+### Artisan
 
 [php artisan] => Menu artisan
 
@@ -32,7 +32,7 @@ Sedders sementes onde se cria registros nas tabelas sem ser de forma visual.
 [php artisan make:controller AlgumaCoisa --resource] => Resource cria um controllador padrão. Com métodos
 de deletar, listar, fazer update, criar e outros.
 
-## Funções e Métodos Laravel
+### Funções e Métodos Laravel
 
 (@csrf) => Input token
 
@@ -44,4 +44,5 @@ de deletar, listar, fazer update, criar e outros.
 
 (@yield)=> Cria a variável do blade template
 
-(@component)=> Lembra um include, porém com mais funcionalidades. Ele inclui uma view onde podemos informar variáveis.
+(@component)=> Lembra um include, porém com mais funcionalidades. Ele inclui variáveis em uma view, podendo assim
+otimizar de maneira mais eficiente alguns trechos HTML ou CSS.
