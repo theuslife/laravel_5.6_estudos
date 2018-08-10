@@ -1,5 +1,7 @@
 ## Anotações sobre o Laravel 5.6 e como funciona o framework
 
+### Introdução
+ 
 [Itens em colchetes significam comandos de prompt]
 
 (Comandos em parênteses são comandos e funções do Laravel)
@@ -17,7 +19,7 @@ Migrations manipula o database. Facilita para criar tabelas e apagar-las.
 
 Sedders sementes onde se cria registros nas tabelas sem ser de forma visual.
 
-## Aritsan
+## Artisan
 
 [php artisan] => Menu artisan
 
@@ -30,7 +32,7 @@ Sedders sementes onde se cria registros nas tabelas sem ser de forma visual.
 [php artisan make:controller AlgumaCoisa --resource] => Resource cria um controllador padrão. Com métodos
 de deletar, listar, fazer update, criar e outros.
 
-# Funções e Métodos Laravel
+## Funções e Métodos Laravel
 
 (@csrf) => Input token
 
