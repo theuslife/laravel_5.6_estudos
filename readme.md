@@ -1,12 +1,6 @@
 ## Anotações sobre o Laravel 5.6 e como funciona o framework
 
 ### Introdução
- 
-[Itens em colchetes significam comandos de prompt]
-
-(Comandos em parênteses são comandos e funções do Laravel)
-
-### Conhecimentos básicos
 
 Laravel pode ser instalado com o Composer
 
@@ -32,17 +26,37 @@ Sedders sementes onde se cria registros nas tabelas sem ser de forma visual.
 [php artisan make:controller AlgumaCoisa --resource] => Resource cria um controllador padrão. Com métodos
 de deletar, listar, fazer update, criar e outros.
 
-### Funções e Métodos Laravel
+[php artisan make:migration nome_da_criação --table=nome_da_tabela] => Adiciona um campo novo em uma tabela já criada
 
-(@csrf) => Input token
+[php artisan migrate:fresh] => Apaga todas as tabelas criadas e roda o script de migrations um por um novamente
 
-(dd) => var_dump com exit
+[php artisan migrate:reset] => Rollback completo e todos os scripts das migrações
 
-(@section)=> Diz os valores de um blade template
 
-(@extends)=> Pega o blade template que será utilizado na view
+### Funções e comandos do Blade
 
-(@yield)=> Cria a variável do blade template
+(@csrf) => Input token.
+
+(@section)=> Diz os valores de um blade template.
+
+(@extends)=> Pega o blade template que será utilizado na view.
+
+(@yield)=> Cria a variável do blade template.
 
 (@component)=> Lembra um include, porém com mais funcionalidades. Ele inclui variáveis em uma view, podendo assim
 otimizar de maneira mais eficiente alguns trechos HTML ou CSS.
+
+(@empty) => Compara se uma variável/array existe elementos ou não.
+
+(@hasSection) => Verifica se há uma sessão do laravel sendo utilizada no layout da view. O bloco hasSection termina com um (@endif) no final 
+
+
+### Funções e comandos do Laravel
+
+(dd) => var_dump com exit.
+
+(csrf_field()) => Input token
+
+
+
+
